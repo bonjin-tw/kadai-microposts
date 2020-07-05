@@ -1,4 +1,4 @@
-@extends('layoutds.app')
+@extends('layouts.app')
 
 @section('content')
     <div class="text-center">
@@ -16,7 +16,7 @@
                 
                 <div class="form-group">
                     {!! Form::label('email','Email') !!}
-                    {!! Form::text('email',old('email'),['class" => 'form-control']) !!}
+                    {!! Form::text('email',old('email'),['class' => 'form-control']) !!}
                 </div>
                 
                 <div class="form-group">
@@ -29,7 +29,7 @@
                     {!! Form::password('password_confirmation',['class' => 'form-control']) !!}
                 </div>
                 
-                {!! Form::submit('Sign up',['class' => 'btn btn-primary btn-block'] !!}
+                {!! Form::submit('Sign up',['class' => 'btn btn-primary btn-block']) !!}
             {!! Form::close() !!}
         </div>
     </div>
